@@ -38,14 +38,13 @@ main {
 }
 
 #landing-text {
-  display:flex;
+  display: flex;
   flex: 0 1 40vw;
   height: 50vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 
 #landing-text h2 {
@@ -74,5 +73,60 @@ main {
 
 .btn:hover{
   background: #f4f4f4;
+}
 
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen Size 500px and Up */
+
+@media(min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+
+/* Screen Size 700px and Up */
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
 }
